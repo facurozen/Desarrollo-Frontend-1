@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1</title>
+</head>
+
+<body>
+    <h1> Home</h1>
+    
+    <h2>Menu</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Pagina principal</a></li>
+            <li><a href="proyectos/index.html">Proyectos</a></li>
+        </ul>
+    </nav>
+    <p>Lorem, ipsum dolor sit amet consectetur <strong> adipisicing elit.</strong> Soluta tenetur sequi modi repellendus
+        rem at voluptatum non reprehenderit corrupti.
+        <br> <em>Sit pariatur quasi ratione hic fugit mollitia minima nisi quas tempora!</em>
+    </p>
+    <img src="img/Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg" alt="Foto Messi">
+    <h2> Lista de materias de la carrera</h2>
+    <ul>
+        <li>Programación 1 </li>
+        <li>Desarrollo UX</li>
+        <li>Microeconomía </li>
+    </ul>
+    <h2>Materias correlativas </h2>
+    <ol> <!--Si pongo ol>li* cant de li (me trae la cantidad de elementos que quiero) -->
+        <li>Programación 1 </li>
+        <li>Programación 2 </li>
+        <li>Programación 3</li>
+    </ol>
+    <h2> Materias correlativas en otra carrera</h2>
+    <ol start="4">
+        <li>Programación 4</li>
+        <li>Base de datos</li>
+        <li>Ciencia de datos</li>
+    </ol>
+
+    <h2> Tabla </h2>
+
+    <table border="1">
+        <tr>
+            <th>Día</th>
+            <th>Mes</th>
+            <th>Año</th>
+        </tr>
+        <tr>
+            <td colspan="2">1 Agosto</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td rowspan="2">Septiembre</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>1995</td>
+        </tr>
+    </table>
+
+    <h2>Links</h2>
+    <a href="https://validator.w3.org/" target="_blank"> Validador de HTML</a> <!--El _blank es para que google abra otra pestaña con el link, y no salga de tu sitio web-->
+    <a id="receta2"></a>
+    <h2>Receta 2</h2>
+
+    <a href="pagina2.html">Link a la pagina 2</a>
+
+    
+
+    <h3>Formulario</h3>
+    <form action="">
+        <label> Nombre: <input required type="text" name="nombre" id="nombre" maxlength="50"></label> <br>
+        <label>Apellido: <input required type="text" name="apellido" id="apellido" maxlength="50"></label> <br>
+
+        <h2>Comidas</h2>
+        <label><input checked type="checkbox" name="hamburguesa" id="ham">Hamburguesa</label><br>
+        <!--El checked hace que se preseleccione la opción (en los inputs).-->
+        <label><input type="checkbox" name="milanesa" id="mil">Milanesa</label><br>
+        <label><input type="checkbox" name="pastas" id="pastas">Pastas</label><br>
+        <label><input checked type="checkbox" name="asado" id="asado">Asado</label><br>
+        <!--El checked hace que se preseleccione la opción (en los inputs).-->
+
+        <h2>Edad</h2>
+        <!--Si usamos "radio", el nombre de la variable tiene que ser igual en todos -->
+        <label><input type="radio" name="edad" id="ed1" value="Menor a 18 años">Menor a 18 años</label><br>
+        <label><input checked type="radio" name="edad" id="ed2" value="Entre 18 y 25 años">Entre 18 y 25
+            años</label><br> <!--El checked hace que se preseleccione la opción (en los inputs).-->
+        <label><input type="radio" name="edad" id="ed3" value="Entre 25 y 55 años">Entre 25 y 55 años</label><br>
+        <label><input type="radio" name="edad" id="ed4" value="Más de 55 años">Más de 55 años</label><br>
+
+        <h2>Contraseña</h2>
+        <label> Contraseña: <input type="password" name="contraseña" id="pass"></label><br>
+
+        <h2> Deja tu consulta</h2>
+
+        <!--Si hacemos el label separado del textarea, hay que usar el for. Si lo hacemos en la misma fila no es necesario el for -->
+        <label for="comentario"> Consulta:</label> <!--El for tiene que tener el mismo id que en el textarea -->
+        <textarea name="comentario" id="comentario" cols="40" rows="15"
+            placeholder="Escribe tu consulta"></textarea><br>
+
+        <h2> País</h2>
+        <!--El select lo hacemos cuando necesitamos responder con una sola opcion (como el radio) pero tenes muchas opciones, y ocupa mucho lugar-->
+        <label for="pais">Seleccione su país </label>
+        <select name="pais" id="pais">
+            <option value="A">Argentina</option>
+            <option selected value="B">Brasil</option> <!--El selected hace que se preseleccione la opción.-->
+            <option value="U">Uruguay</option>
+            <option value="F">Francia</option>
+        </select> <br>
+
+        <button> Enviar </button> <br>
+    </form>
+
+    <a href="#receta2"> Receta 2</a>
+</body>
+
+</html>
+
+<!--Para acomodar el programa hago: Ctrl A + Ctrl K + Ctrl F -->
