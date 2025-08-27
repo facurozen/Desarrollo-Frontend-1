@@ -1,0 +1,14 @@
+#tabla{
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    border: 2px solid black;
+}
+th,td {
+    border: 1px solid black;
+}
+
+.listas {
+    color: chocolate;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
