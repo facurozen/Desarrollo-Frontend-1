@@ -1,0 +1,46 @@
+*{
+    margin-top: 0;
+    box-sizing: border-box; /* es como mide el tamaño de una caja. Le decis que hasta el borde inclusive lo cuente dentro del ancho de la caja. El padding y el borde quedan incluidos dentro de la caja */
+}
+body{
+    background-image:url(img/pattern.png);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 960px;
+    padding: 16px;
+}
+
+main{
+    display: flex;
+    justify-content: flex-end;  
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 65%; 
+}
+article{
+    background-color:aquamarine;
+    padding: 16px;
+    width: 33.33%;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+}
+
+article:nth-of-type(odd){ /* eso hace que me aplique el diseño a todos los pares*/
+background-color: #e8dea9;;
+}
+article:nth-of-type(even){ /* eso hace que me aplique el diseño a todos los impares*/
+background-color: #c37a7a;
+}
+

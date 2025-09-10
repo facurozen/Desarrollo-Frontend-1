@@ -1,0 +1,29 @@
+body{
+    background-image:url(img/pattern.png);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 960px;
+    padding: 16px;
+}
+section{
+    display: flex;
+    gap: 16px; /* eso le hace una separacion de los elementos*/
+}
+article{
+    background-color:aquamarine;
+    padding: 16px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+}
+article:first-of-type{ /* esto selecciona el primer articulo*/
+width: 65%;
+}
+article:last-of-type{ /* esto selecciona el ultimo articulo*/
+    width: 35%;
+}

@@ -1,0 +1,58 @@
+*{
+    margin-top: 0;
+    box-sizing: border-box; /* es como mide el tamaño de una caja. Le decis que hasta el borde inclusive lo cuente dentro del ancho de la caja. El padding y el borde quedan incluidos dentro de la caja */
+}
+body{
+    background-image:url(img/pattern.png);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    max-width: 960px;
+    padding: 16px;
+}
+
+main{
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.section1{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 65%; 
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* eso le hace una separacion de los elementos*/
+    width: 35%; /* como le limite el tamaño al section, se achicaron los articles*/
+}
+.section1 article{
+    padding: 16px;
+    width: 33.33%;
+}
+img{
+    width: 100%;
+}
+
+.section1 article:nth-of-type(odd){ /* eso hace que me aplique el diseño a todos los pares*/
+background-color: #e8dea9;
+}
+.section1 article:nth-of-type(even){ /* eso hace que me aplique el diseño a todos los impares*/
+background-color: #c37a7a;
+}
+
+.section2 article{
+    width: 100%;
+    background-color:aquamarine;
+    padding: 16px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    margin-left: 10px;
+}
